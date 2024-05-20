@@ -1,2 +1,2 @@
-# IEEE-SB-Website-
+# IEEE-SB-Website
 Code for IEEE SB, LNMIIT Website 
