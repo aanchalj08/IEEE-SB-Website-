@@ -9,7 +9,7 @@ const EventCard = ({date, eventName, eventDescription, eventVenue}) => {
   };
   return (
     <div className="p-3">
-      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
+      <div className="flex flex-col lg:flex-row gap-10 mx-auto justify-between items-start lg:items-center">
         <div className="w-full lg:w-1/4 mt-4 lg:mt-0">
           <h2 className="text-blue-800 text-3xl">{date}</h2>
         </div>
@@ -25,7 +25,7 @@ const EventCard = ({date, eventName, eventDescription, eventVenue}) => {
             {isExpanded ? "Show Less" : "Event Details"}
           </button>
         </div>
-        <div className="w-full lg:w-1/4 mt-4 lg:mt-0">
+        <div className="w-full lg:w-1/4 mt-4 lg:p-2 lg:text-end lg:mt-0">
           <p className="text-2xl">{eventVenue}</p>
         </div>
       </div>
