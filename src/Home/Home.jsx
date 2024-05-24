@@ -10,9 +10,11 @@ import { EventData } from "./eventData";
 
 const Home = () => {
 	return (
-		<div className="w-5/6 mx-auto flex-row space-y-10">
+		<div>
 			<HomeImg />
-			<div className="text-center">
+			
+			<div className="w-5/6 mx-auto flex-row space-y-10 ">
+			<div className="text-center mt-[-190px]">
 				<Header title="ABOUT" />
 				<ul className="list-disc mt-8 m-6 font-normal text-slate-600 text-lg">
 					<li className="m-5 ">
@@ -35,7 +37,7 @@ const Home = () => {
 				</button>
 			</div>
 
-			<div className="flex w-full">
+			<div className="flex w-[120%] ml-[-142px] max-2xl:ml-0  max-2xl:w-[100%]">
 				<img
 					src={firstImg}
 					className="w-1/4 h-80 hover:scale-105 origin-center ease-in duration-300 "></img>
@@ -122,7 +124,7 @@ const Home = () => {
 						title="Google Maps"></iframe>
 				</div>
 			</div>
-
+			</div>
 			{/* Contact Us */}
 			<StayInTouch />
 		</div>
