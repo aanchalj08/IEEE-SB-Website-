@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { fac_arr,ieee_sb,webdevs,wie } from "./Data.js";
+import { cont_ctr, event_mng, fac_arr,ieee_sb,webdevs,wie } from "./Data.js";
 //will use DaisyUI for carousel
 
 const Team = () => {
@@ -52,6 +52,28 @@ const Team = () => {
         <div className="grid md:grid-cols-4 sm:grid-cols-2 content-center my-2">
           {
             webdevs.map((f)=>(
+              <Card Facultyname={f.Name} photo={f.photo} description={f.description} position={f.position}></Card>
+            ))
+          }
+        </div>
+      </div>
+      <div className="p-2 my-4">
+        <h4 className="text-xl text-center my-2 font-medium text-slate-800">Content Creator Team</h4>  
+        <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 content-center my-2">
+          {
+            cont_ctr.map((f)=>(
+              <Card Facultyname={f.Name} photo={f.photo} description={f.description} position={f.position}></Card>
+            ))
+          }
+        </div>
+      </div>
+      <div className="p-2 my-4">
+        <h4 className="text-xl text-center my-2 font-medium text-slate-800">Event Management Team</h4>  
+        <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
+        <div className="grid md:grid-cols-4 sm:grid-cols-2 content-center my-2">
+          {
+            event_mng.map((f)=>(
               <Card Facultyname={f.Name} photo={f.photo} description={f.description} position={f.position}></Card>
             ))
           }

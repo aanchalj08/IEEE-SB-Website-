@@ -6,6 +6,18 @@ import Arindham_Chaudhary from "../assets/Arindham_Chaudhary.jpg"
 import Vishal_Aggarwal from "../assets/Vishal_Aggarwal.jpg"
 import Pearl_Agarwal from "../assets/Pearl_Agarwal.jpg"
 import Radhika_Jain from "../assets/Radhika_Jain.jpg"
+import Aditya_Chaudhary from "../assets/Aditya_Chaudhary.jpeg"
+import Maitreyee_Kulkarni from "../assets/Maitreyee_Kulkarni.jpg"
+import Shivang_Mewada from "../assets/Shivang_Mewada.jpg"
+import Rohit_Rana from "../assets/Rohit_Rana.jpg"
+import Riya_Kachhara from "../assets/Riya_Kachhara.jpg"
+import Suhani_Gupta from "../assets/Suhani_Gupta.jpg"
+import Yash_Bijawat from "../assets/Yash_Bijawat.jpg"
+import Kashvi_Jain from "../assets/Kashvi_Jain.jpg"
+import Aditya_Jain from "../assets/Aditya_Jain.jpg"
+import Shreedhar_Goyal from "../assets/Shreedhar_Goyal.jpg"
+import Anshika_Agrawal from "../assets/Anshika_Agrawal.jpeg"
+import Ayush_Agrawal from "../assets/Ayush_Agrawal.jpg"
 
 export const fac_arr=[
     {
@@ -99,19 +111,19 @@ export const webdevs=[
         Name:"Shivang Mewada",
         position:"Member",
         description:"",
-        photo:"" 
+        photo:Shivang_Mewada
     },
     {
         Name:"Maitreyee Kulkarni",
         position:"Member",
         description:"",
-        photo:"" 
+        photo:Maitreyee_Kulkarni
     },
     {
         Name:"Aditya Chaudhary",
         position:"Member",
         description:"",
-        photo:""         
+        photo:Aditya_Chaudhary 
     },
     {
         Name:"Nikhil Goyal",
@@ -123,6 +135,72 @@ export const webdevs=[
         Name:"Rohit Singh Rana",
         position:"Member",
         description:"",
-        photo:"" 
+        photo:Rohit_Rana
+    }
+]
+
+export const cont_ctr = [
+    {
+        Name:"Suhani Gupta",
+        position:"Lead",
+        description:"",
+        photo:Suhani_Gupta
+    },
+    {
+        Name:"Riya Kachhara",
+        position:"Member",
+        description:"",
+        photo:Riya_Kachhara
+    },
+    {
+        Name:"Mitul Khemani",
+        position:"Member",
+        description:"",
+        photo:""
+    }
+]
+
+export const event_mng = [
+    {
+        Name:"Yash Bijawat",
+        position:"Lead",
+        description:"",
+        photo:Yash_Bijawat
+    },
+    {
+        Name:"Kashvi Jain",
+        position:"Member",
+        description:"",
+        photo:Kashvi_Jain
+    },
+    {
+        Name:"Aditya Jain",
+        position:"Member",
+        description:"",
+        photo:Aditya_Jain
+    },
+    {
+        Name:"Ayush Agrawal",
+        position:"Member",
+        description:"",
+        photo:Ayush_Agrawal
+    },
+    {
+        Name:"Shreedhar Goyal",
+        position:"Member",
+        description:"",
+        photo:Shreedhar_Goyal
+    },
+    {
+        Name:"Jyoti Kumari",
+        position:"Member",
+        description:"",
+        photo:""
+    },
+    {
+        Name:"Anshika Agrawal",
+        position:"Member",
+        description:"",
+        photo:Anshika_Agrawal
     }
 ]
