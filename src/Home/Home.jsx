@@ -36,8 +36,8 @@ const Home = () => {
 					Know More
 				</button>
 			</div>
-
-			<div className="flex w-[120%] ml-[-142px] max-2xl:ml-0  max-2xl:w-[100%]">
+            
+			<div className="flex w-[120%] ml-[-142px] max-2xl:ml-[-80px]  max-2xl:w-[117%]">
 				<img
 					src={firstImg}
 					className="w-1/4 h-80 hover:scale-105 origin-center ease-in duration-300 "></img>
