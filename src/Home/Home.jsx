@@ -5,13 +5,35 @@ import firstImg from '../assets/first.webp'
 import secondImg from '../assets/second.webp'
 import thirdImg from '../assets/third.webp'
 import fourthImg from '../assets/fourth.webp'
+import cross from '../assets/cross.svg'
+import prev from '../assets/prev.svg'
+import frwd from '../assets/frwd.svg'
 import StayInTouch from "./StayTouch";
 import { EventData } from "./eventData";
+import { useState } from "react";
 
 const Home = () => {
+	const [slideNumber, setSlideNumber] = useState(1)
+	const [show, setShow] = useState(false)
+	const images = [firstImg, secondImg, thirdImg, fourthImg];
+	const frwdSlider = () => {
+		if (slideNumber < 4) {
+			setSlideNumber(slideNumber + 1)
+		}	else if(slideNumber == 4){
+			setSlideNumber(1)
+		}
+	}
+	const prevSlider = () => {
+		if (slideNumber > 1) {
+			setSlideNumber(slideNumber - 1)
+		}	else if(slideNumber == 1){
+			setSlideNumber(4)
+		}
+	}
 	return (
 		<div className="w-5/6 mx-auto flex-row space-y-10">
 			<HomeImg />
+			<h1 className="text-center text-blue-800 text-6xl">IEEE Student Branch, LNMIIT</h1>
 			<div className="text-center">
 				<Header title="ABOUT" />
 				<ul className="list-disc mt-8 m-6 font-normal text-slate-600 text-lg">
@@ -35,18 +57,48 @@ const Home = () => {
 				</button>
 			</div>
 
-			<div className="flex w-full">
+			<div className="lg:hidden flex justify-center gap-10">
+				<button onClick={prevSlider}><img src={prev} className="w-10" /></button>
+				<div>
+					<img src={images[slideNumber-1]} className="w-[700px]" />
+				</div>
+				<button onClick={frwdSlider}><img src={frwd} className="w-10" /></button>
+			</div>
+
+			<div className={`absolute p-5 z-50 w-full left-0 bg-slate-500 ${!show && "invisible"}`}>
+				<div className="flex justify-between">
+					<div>
+						<p>{slideNumber}/4</p>
+					</div>
+					<div>
+						<img src={cross} onClick={() => setShow(false)} className="w-10" />
+					</div>
+				</div>
+				<div className="flex justify-center gap-10">
+					<button onClick={prevSlider}><img src={prev} className="w-10" /></button>
+					<div>
+						<img src={images[slideNumber-1]} className="w-[700px]" />
+					</div>
+					<button onClick={frwdSlider}><img src={frwd} className="w-10" /></button>
+				</div>
+			</div>
+
+			<div className="w-[120%] lg:-ml-[100px]  xl:-ml-[123px] hidden lg:flex">
 				<img
 					src={firstImg}
-					className="w-1/4 h-80 hover:scale-105 origin-center ease-in duration-300 "></img>
+					onClick={() => setShow(true)}
+					className="w-1/4 z-10 h-80 hover:scale-105 origin-center ease-in duration-300 "></img>
 				<img
 					src={secondImg}
+					onClick={() => setShow(true)}
 					className="w-1/4 h-80 hover:scale-105 origin-center ease-in duration-300"></img>
 				<img
 					src={thirdImg}
+					onClick={() => setShow(true)}
 					className="w-1/4 h-80 hover:scale-105 origin-center ease-in duration-300"></img>
 				<img
 					src={fourthImg}
+					onClick={() => setShow(true)}
 					className="w-1/4 h-80 hover:scale-105 origin-center ease-in duration-300"></img>
 			</div>
 

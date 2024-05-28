@@ -2,9 +2,9 @@ import Bgimg from "../assets/collegebg.jpg";
 
 const HomeImg = () => {
   return (
-    <div className="">
+    <div className="hidden md:block">
       <div
-        className="w-full h-screen bg-cover bg-center brightness-[55%]"
+        className="w-[120%] -ml-[123px] h-screen bg-cover bg-center brightness-[55%]"
         style={{ backgroundImage: `url(${Bgimg})` }}>
       </div>
       <div className="relative bottom-[490px] left-[350px] text-white flex-col flex justify-center items-center w-[850px]">
