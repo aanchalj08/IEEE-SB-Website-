@@ -18,6 +18,10 @@ import Aditya_Jain from "../assets/Aditya_Jain.jpg"
 import Shreedhar_Goyal from "../assets/Shreedhar_Goyal.jpg"
 import Anshika_Agrawal from "../assets/Anshika_Agrawal.jpeg"
 import Ayush_Agrawal from "../assets/Ayush_Agrawal.jpg"
+import Caro1 from "../assets/Caro1.jpg"
+import Caro2 from "../assets/Caro2.jpg"
+import Caro3 from "../assets/Caro3.jpg"
+import Caro4 from "../assets/Caro4.jpg"
 
 export const fac_arr=[
     {
@@ -204,3 +208,10 @@ export const event_mng = [
         photo:Anshika_Agrawal
     }
 ]
+
+export const slides=[
+  Caro1,
+  Caro2,
+  Caro3,
+  Caro4
+];
