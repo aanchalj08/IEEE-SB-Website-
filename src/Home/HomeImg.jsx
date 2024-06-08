@@ -2,7 +2,7 @@ import Bgimg from "../assets/collegebg.jpg";
 
 const HomeImg = () => {
   return (
-    <div className="">
+    <div className="hidden md:block">
       <div
         className="w-screen h-screen bg-cover bg-center brightness-[55%] ml-[-135px] max-lg:w-full"
         style={{ backgroundImage: `url(${Bgimg})` }}>
