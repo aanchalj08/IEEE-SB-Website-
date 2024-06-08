@@ -22,6 +22,9 @@ import Caro1 from "../assets/Caro1.jpg"
 import Caro2 from "../assets/Caro2.jpg"
 import Caro3 from "../assets/Caro3.jpg"
 import Caro4 from "../assets/Caro4.jpg"
+import Shivansh_Porwal from "../assets/Shivansh_Porwal.jpg"
+import Nikhil_Goyal from "../assets/Nikhil_Goyal.png"
+import Mitul_Khemani from "../assets/Mitul_Khemani.jpg"
 
 export const fac_arr=[
     {
@@ -61,7 +64,7 @@ export const ieee_sb=[
         Name:"Shivansh Porwal",
         position:"Secretary",
         description:"",
-        photo:""
+        photo:Shivansh_Porwal
     },
     {
         Name:"Vishal Aggarwal",
@@ -133,7 +136,7 @@ export const webdevs=[
         Name:"Nikhil Goyal",
         position:"Member",
         description:"",
-        photo:"" 
+        photo:Nikhil_Goyal
     },
     {
         Name:"Rohit Singh Rana",
@@ -160,7 +163,7 @@ export const cont_ctr = [
         Name:"Mitul Khemani",
         position:"Member",
         description:"",
-        photo:""
+        photo:Mitul_Khemani
     }
 ]
 
