@@ -15,7 +15,7 @@ const Team = () => {
       </div>
       {/* Faculty section */}
       <div className="p-2 my-4">
-        <h4 className="text-xl text-center my-2 font-medium text-slate-800">
+        <h4 className="text-3xl text-center my-2 font-medium text-slate-800">
           Faculty Mentors
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
@@ -32,7 +32,7 @@ const Team = () => {
       </div>
       {/* Students section */}
       <div className="p-2 my-4">
-        <h4 className="text-xl text-center my-2 font-medium text-slate-800">
+        <h4 className="text-3xl text-center my-2 font-medium text-slate-800">
           IEEE Student Branch
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
@@ -48,7 +48,7 @@ const Team = () => {
         </div>
       </div>
       <div className="p-2 my-4">
-        <h4 className="text-xl text-center my-2 font-medium text-slate-800">
+        <h4 className="text-3xl text-center my-2 font-medium text-slate-800">
           Women in Engineering
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
@@ -64,7 +64,7 @@ const Team = () => {
         </div>
       </div>
       <div className="p-2 my-4">
-        <h4 className="text-xl text-center my-2 font-medium text-slate-800">
+        <h4 className="text-3xl text-center my-2 font-medium text-slate-800">
           Web Development Team
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
@@ -80,7 +80,7 @@ const Team = () => {
         </div>
       </div>
       <div className="p-2 my-4">
-        <h4 className="text-xl text-center my-2 font-medium text-slate-800">
+        <h4 className="text-3xl text-center my-2 font-medium text-slate-800">
           Content Creator Team
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
@@ -96,7 +96,7 @@ const Team = () => {
         </div>
       </div>
       <div className="p-2 my-4">
-        <h4 className="text-xl text-center my-2 font-medium text-slate-800">
+        <h4 className="text-3xl text-center my-2 font-medium text-slate-800">
           Event Management Team
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
