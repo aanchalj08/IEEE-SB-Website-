@@ -11,8 +11,8 @@ const About = () => {
   return (
     <>
       {/* Know More About Us section */}
-      <div className="bg-[#283f8f] lg:h-52 flex flex-col justify-center items-center">
-        <h1 className="lg:text-[2rem] text-white font-bold leading-4 w-full mx-auto flex flex-col items-center justify-center p-6">Know About Us</h1>
+      <div className="bg-[#283f8f] lg:h-32 flex flex-col justify-center items-center">
+        <h1 className="lg:text-[2rem] text-white font-bold leading-4 w-full mx-auto flex flex-col items-center justify-center p-4">Know About Us</h1>
       </div>
 
       {/* About IEEE section */}

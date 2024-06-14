@@ -10,8 +10,10 @@ import { Link } from "react-router-dom";
 const Event = () => {
   return (
     <>
-      <div className="bg-blue-800 text-center h-60 p-6">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-white mt-4 mb-4">Events</h1>
+      <div className="bg-[#3548a5] p-6">
+        <h1 className="font-semibold text-center text-4xl text-white my-2">
+          Events
+        </h1>
       </div>
       <div className="text-2xl sm:text-3xl lg:text-4xl m-10 text-center lg:text-left lg:ml-40 text-gray-700 font-semibold pt-2">
         WHAT WE LOVE TO DO
