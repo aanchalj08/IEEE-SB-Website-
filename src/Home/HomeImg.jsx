@@ -4,7 +4,7 @@ const HomeImg = () => {
   return (
     <div className="hidden md:block">
       <div
-        className="w-screen h-screen bg-cover bg-center brightness-[55%] ml-[-135px] max-lg:w-full"
+        className="w-screen h-screen bg-cover bg-center brightness-[70%] ml-[-135px] max-lg:w-full"
         style={{ backgroundImage: `url(${Bgimg})` }}>
       </div>
       <div className="relative bottom-[490px] left-[300px] text-white flex-col flex justify-center items-center w-[850px] md:max-xl:w-[350px] md:max-lg:left-[250px] max-sm:left-[130px] lg:max-xl:left-[360px] sm:max-md:w-[400px] sm:max-md:left-[350px] max-sm:w-[200px]">

@@ -33,7 +33,7 @@ const Home = () => {
 	return (
 		<div className="w-5/6 mx-auto flex-row space-y-10">
 			<HomeImg />
-			<h1 className="text-center text-blue-800 text-6xl">IEEE Student Branch, LNMIIT</h1>
+			<h1 className="text-center text-blue-800 text-6xl ">IEEE Student Branch, LNMIIT</h1>
 			<div className="text-center">
 				<Header title="ABOUT" />
 				<ul className="list-disc mt-8 m-6 font-normal text-slate-600 text-lg">
@@ -136,7 +136,7 @@ const Home = () => {
 						</p>
 					</div>
 					<div className="w-full sm:w-1/3 p-3">
-						<p className="font-semibold text-xl">PODCASTS</p>
+						<p className="font-semibold text-xl">TALKS</p>
 						<p className="text-gray-700">
 							Explore and gain knowledge through IEEE SB's dynamic podcasts,
 							fostering student success and transferring valuable insights in
