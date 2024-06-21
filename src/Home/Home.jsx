@@ -11,8 +11,10 @@ import frwd from '../assets/frwd.svg'
 import StayInTouch from "./StayTouch";
 import { EventData } from "./eventData";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+	const navigate=useNavigate();
 	const [slideNumber, setSlideNumber] = useState(1)
 	const [show, setShow] = useState(false)
 	const images = [firstImg, secondImg, thirdImg, fourthImg];
@@ -52,7 +54,7 @@ const Home = () => {
 						the skill set of students.
 					</li>
 				</ul>
-				<button className="border-2 w-40 h-14 bg-blue-800 font-serif text-white text-lg font-semibold hover:bg-blue-600">
+				<button onClick={()=>navigate('/about')} className="border-2 w-40 h-14 bg-blue-800 font-serif text-white text-lg font-semibold hover:bg-blue-600">
 					Know More
 				</button>
 			</div>

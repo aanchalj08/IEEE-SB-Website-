@@ -14,7 +14,7 @@ const Carousel = ({ children: slides, autoSlide = true, autoSlideInterval = 3000
     }, [])
 
   return (
-    <div>
+    <div className="m-2">
       <div className="overflow-hidden relative">
         <div
           className="flex transition-transform ease-out duration-500"
