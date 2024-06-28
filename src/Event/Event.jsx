@@ -22,24 +22,24 @@ const Event = () => {
       </div>
       <hr className="mx-6 lg:ml-20 lg:mr-20" />
       <div className="flex flex-col lg:flex-row items-center text-xl lg:ml-20 text-center font-serif space-y-10 lg:space-y-0 lg:space-x-10 py-10">
-        <div className="w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[20vw]">
+        <div className="w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[20vw] mt-[-80px]">
           <img
             src={workshop}
             className="w-full h-auto mx-auto"
             alt="Workshop"
           />
-          <p className="text-3xl mt-4">Workshops</p>
+          <p className="text-3xl ">Workshops</p>
           <p className="text-gray-500 pt-4">
             IEEE SB organizes informative workshops covering multiple fields.
           </p>
         </div>
-        <div className="w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[20vw]">
+        <div className="w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[20vw] ">
           <img
             src={hackathon}
-            className="w-full h-auto mx-auto"
+            className="w-full h-auto mx-auto mt-[-44px]"
             alt="Hackathon"
           />
-          <p className="text-3xl mt-4">Hackathons</p>
+          <p className="text-3xl ">Hackathons</p>
           <p className="text-gray-500 pt-4">
             IEEE SB conducts various hackathons to create a healthy competition
             and increase knowledge sharing culture.

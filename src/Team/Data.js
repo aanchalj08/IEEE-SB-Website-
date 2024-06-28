@@ -29,19 +29,19 @@ import Mitul_Khemani from "../assets/Mitul_Khemani.jpg"
 export const fac_arr=[
     {
         Name:"Dr. Harshvardhan Kumar",
-        position:"",
+        position:"IEEE SB CO-COORDINATOR",
         description:"",
         photo:dr_harshvardhan_kumar
     },
     {
         Name:"Dr. Soumitra Debnath",
-        position:"",
+        position:"IEEE SB COORDINATOR",
         description:"",
         photo:dr_soumitra_debnath
     },
     {
         Name:"Mr. Purnendu Karmarkar",
-        position:"",
+        position:"IEEE SB CO-COORDINATOR",
         description:"",
         photo:mr_purnendu_karmarkar
     }
