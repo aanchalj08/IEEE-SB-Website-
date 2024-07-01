@@ -26,6 +26,12 @@ import Shivansh_Porwal from "../assets/Shivansh_Porwal.jpg";
 import Nikhil_Goyal from "../assets/Nikhil_Goyal.png";
 import Mitul_Khemani from "../assets/Mitul_Khemani.jpg";
 import Jyoti_Kumari from "../assets/Jyoti_kumari.jpeg";
+import Aanchal_Jain from "../assets/Aanchal_Jain.jpeg";
+import Harshita from "../assets/Harshita_Sharma.jpeg";
+import Neha_Soni from "../assets/Neha_Soni.jpg";
+import Rudransh from "../assets/Rudransh_Singhal.jpeg"
+
+
 export const fac_arr = [
   {
     Name: "Dr. Harshvardhan Kumar",
@@ -79,7 +85,7 @@ export const wie = [
     Name: "Neha Soni",
     position: "Chairperson",
     description: "",
-    photo: "",
+    photo: Neha_Soni,
   },
   {
     Name: "Radhika Jain",
@@ -91,7 +97,7 @@ export const wie = [
     Name: "Harshita Sharma",
     position: "Secretary",
     description: "",
-    photo: "",
+    photo: Harshita,
   },
   {
     Name: "Pearl Agarwal",
@@ -106,13 +112,13 @@ export const webdevs = [
     Name: "Aanchal Jain",
     position: "Lead",
     description: "",
-    photo: "",
+    photo: Aanchal_Jain,
   },
   {
     Name: "Rudransh Shinghal",
     position: "Member",
     description: "",
-    photo: "",
+    photo: Rudransh,
   },
   {
     Name: "Shivang Mewada",
