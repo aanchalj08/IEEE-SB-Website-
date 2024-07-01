@@ -1,11 +1,28 @@
 import { useForm } from 'react-hook-form';
 import contactUS from '../assets/contactUS.jpg'
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+
 const Contact = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
+  const form = useRef();
 
-  const onSubmit = data => {
+  const onSubmit = (data, e) => {
+    e.preventDefault();
+    data.reply_to = data.email
     console.log(data);
-    // Handle form submission logic here
+    emailjs
+      .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMP_ID, form.current, {
+        publicKey: import.meta.env.VITE_API_KEY,
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
@@ -18,7 +35,7 @@ const Contact = () => {
             For more details and answers to your queries, contact us!
           </p>
         </div>
-        <form className="mt-4 space-y-6 " onSubmit={handleSubmit(onSubmit)}>
+        <form ref={form} className="mt-4 space-y-6 " onSubmit={handleSubmit(onSubmit)}>
           <div className="rounded-md shadow-sm -space-y-px ">
             <div>
               <label htmlFor="name" className="sr-only">Name</label>
