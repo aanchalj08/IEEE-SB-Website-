@@ -5,6 +5,15 @@
   text-align: center;
 }
 
+@font-face {
+  font-family: source-sans;
+  src: url(/SourceSans3-VariableFont_wght.ttf);
+}
+
+.source-sans{
+  font-family: source-sans;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

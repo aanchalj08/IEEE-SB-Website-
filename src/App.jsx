@@ -10,7 +10,7 @@ import About from './About/About';
 
 function App() {
   return (
-    <div className='w-full'>
+    <div className='w-full source-sans'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
