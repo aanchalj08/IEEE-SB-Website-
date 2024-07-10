@@ -70,12 +70,12 @@ const About = () => {
           </h3>
           <hr />
         </div>
-        <div className="flex flex-col lg:flex-row mx-4 lg:mx-14 mb-14 pb-8 justify-evenly w-full">
-          <div className="flex flex-col mb-8 lg:mb-0 lg:mr-24">
+        <div className="flex flex-col lg:flex-row  mb-14 pb-8 justify-center w-screen">
+          <div className="flex flex-col mb-8 lg:mb-0 lg:mr-24 ">
             <p className="text-white font-semibold mb-8 text-lg">
               Who we are?
             </p>
-            <p className="text-[#e0e0e4] font-normal text-base font-['Old Standard TT', serif]">
+            <p className="text-[#e0e0e4] font-normal text-base font-['Old Standard TT', serif] ml-5">
               We are a combined association of faculty members along with the
               enthusiastic students of our college, The LNMIIT Jaipur. We strive
               for creating technology for the people and people for technology.
@@ -92,10 +92,10 @@ const About = () => {
             </p>
           </div>
           <div className="flex flex-col">
-            <p className="text-white font-semibold mb-8 text-lg">
+            <p className="text-white font-semibold mb-8 text-lg ">
               What we have done?
             </p>
-            <p className="text-[#e0e0e4] font-normal text-base font-['Old Standard TT', serif]">
+            <p className="text-[#e0e0e4] font-normal text-base font-['Old Standard TT', serif] mr-5">
               Workshops in popular areas, distinguished lectures, student
               competitions and challenging developers sprints are few regular
               events which this branch pursues with highest order of energy and

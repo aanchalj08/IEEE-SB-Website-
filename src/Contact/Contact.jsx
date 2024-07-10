@@ -26,7 +26,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-[900px] h-[600px] mt-16 mb-28 ml-96 max-xl:ml-20 max-lg:ml-0 max-sm:h-[650px] max-md:w-[600px] max-sm:w-[430px] flex justify-center items-center bg-cover bg-no-repeat bg-center  rounded-lg brightness-[120%]" style={{ backgroundImage: `url(${contactUS})` }}>
+    <div className='w-full h-full flex justify-center'>
+    <div className="w-[900px] h-[600px] mt-16 mb-28  max-xl:ml-20 max-lg:ml-0 max-sm:h-[650px] max-md:w-[600px] max-sm:w-[430px] flex justify-center items-center bg-cover bg-no-repeat bg-center  rounded-lg brightness-[120%]" style={{ backgroundImage: `url(${contactUS})` }}>
       <div className="w-[70%]  flex " >
         <div className='h-[500px] ml-4'> 
         <div className='p-5 mt-[-10px]'>
@@ -103,6 +104,7 @@ const Contact = () => {
         </form>
         </div>
       </div>
+    </div>
     </div>
   )
 }
