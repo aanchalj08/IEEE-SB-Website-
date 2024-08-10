@@ -47,7 +47,7 @@ const Event = () => {
         </div>
         <div className="w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[20vw]">
           <img src={podcast} className="w-full h-auto mx-auto" alt="Podcast" />
-          <p className="text-3xl mt-4">Podcasts</p>
+          <p className="text-3xl">Podcasts</p>
           <p className="text-gray-500 pt-4">
             Explore and gain knowledge through IEEE SBs dynamic podcasts,
             fostering student success and transferring valuable insights in the
@@ -60,7 +60,7 @@ const Event = () => {
             className="w-full h-auto mx-auto"
             alt="Informative Tours"
           />
-          <p className="text-3xl mt-4">Informative Tours</p>
+          <p className="text-3xl">Informative Tours</p>
           <p className="text-gray-500 pt-4">
             The IEEE SB often travel to informative centers and to places full
             of new technologies in order to update students about it and help
