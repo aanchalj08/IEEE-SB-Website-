@@ -1,27 +1,30 @@
 import './App.css'
 import Footer from './HeaderFooter/Footer'
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from './HeaderFooter/Navbar'
 import Home from './Home/Home';
 import Event from './Event/Event';
 import Contact from './Contact/Contact';
 import Team from './Team/Team';
 import About from './About/About';
+import HomeImg from './Home/HomeImg';
 
 function App() {
+  const location = useLocation();
   return (
-    <div className='w-full source-sans'>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/event" element={<Event />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/team" element={<Team />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-      <Footer />
-    </div>
-  )
+		<div className="w-full source-sans">
+			<Navbar />
+			{location.pathname === "/" && <HomeImg />}
+			<Routes>
+				<Route path="/" element={<Home />} />
+				<Route path="/event" element={<Event />} />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="/team" element={<Team />} />
+				<Route path="/about" element={<About />} />
+			</Routes>
+			<Footer />
+		</div>
+	);
 }
 
 export default App

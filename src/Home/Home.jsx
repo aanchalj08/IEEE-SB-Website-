@@ -1,6 +1,5 @@
 import EventCard from "./EventCard";
 import Header from "./Header";
-import HomeImg from "./HomeImg";
 import firstImg from '../assets/first.webp'
 import secondImg from '../assets/second.webp'
 import thirdImg from '../assets/third.webp'
@@ -34,7 +33,6 @@ const Home = () => {
 	}
 	return (
 		<div className="w-5/6 mx-auto flex-row space-y-10">
-			<HomeImg />
 			<h1 className="text-center text-blue-800 text-6xl ">IEEE Student Branch, LNMIIT</h1>
 			<div className="text-center">
 				<Header title="ABOUT" />
@@ -89,7 +87,7 @@ const Home = () => {
 				<img
 					src={firstImg}
 					onClick={() => setShow(true)}
-					className="w-1/4 z-10 h-80 hover:scale-105 origin-center ease-in duration-300 "></img>
+					className="w-1/4 h-80 hover:scale-105 origin-center ease-in duration-300"></img>
 				<img
 					src={secondImg}
 					onClick={() => setShow(true)}
