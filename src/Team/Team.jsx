@@ -1,8 +1,28 @@
 import Card from "./Card";
-import { cont_ctr, event_mng, fac_arr, ieee_sb, webdevs, wie ,slides } from "./Data.js";
+import {
+  map_cont_ctr,
+  map_event_mng,
+  map_fac_arr,
+  map_ieee_sb,
+  map_wie,
+  map_webdevs,
+  slides,
+  years,
+} from "./Data.js";
 import Carousel from "./Carousel";
+import InputLabel from "@mui/material/InputLabel";
+import Select from "@mui/material/Select";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import { useState } from "react";
 
 const Team = () => {
+  const [year, setYear] = useState("2024-2025");
+
+  const handleChange = (e) => {
+    setYear(e.target.value);
+  };
+
   return (
     <div>
       <div className="bg-[#3548a5] p-6">
@@ -13,6 +33,26 @@ const Team = () => {
           Meet Our Team
         </h4>
       </div>
+      <div className="relative mt-4 w-full">
+        <FormControl sx={{ m: 1, minWidth: 120 }} size="medium">
+          <InputLabel id="year-label">Year</InputLabel>
+          <Select
+            labelId="year-label"
+            id="year"
+            value={year}
+            label="year"
+            onChange={handleChange}
+            defaultValue={"2024-2025"}
+          >
+            {years.map((value, idx) => (
+              <MenuItem key={idx} value={value}>
+                {value}
+              </MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </div>
+
       {/* Faculty section */}
       <div className="p-2 my-4">
         <h4 className="text-3xl text-center my-2 font-medium text-slate-800">
@@ -20,8 +60,9 @@ const Team = () => {
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
         <div className="grid md:grid-cols-3 sm:grid-cols-2 content-center my-2">
-          {fac_arr.map((f) => (
+          {map_fac_arr[year].map((f, idx) => (
             <Card
+              key={idx}
               Facultyname={f.Name}
               photo={f.photo}
               description={f.description}
@@ -37,8 +78,9 @@ const Team = () => {
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
         <div className="grid md:grid-cols-4 sm:grid-cols-2 content-center my-2">
-          {ieee_sb.map((f) => (
+          {map_ieee_sb[year].map((f, idx) => (
             <Card
+              key={idx}
               Facultyname={f.Name}
               photo={f.photo}
               description={f.description}
@@ -53,8 +95,9 @@ const Team = () => {
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
         <div className="grid md:grid-cols-4 sm:grid-cols-2 content-center my-2">
-          {wie.map((f) => (
+          {map_wie[year].map((f, idx) => (
             <Card
+              key={idx}
               Facultyname={f.Name}
               photo={f.photo}
               description={f.description}
@@ -69,8 +112,9 @@ const Team = () => {
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
         <div className="grid md:grid-cols-4 sm:grid-cols-2 content-center my-2">
-          {webdevs.map((f) => (
+          {map_webdevs[year].map((f, idx) => (
             <Card
+              key={idx}
               Facultyname={f.Name}
               photo={f.photo}
               description={f.description}
@@ -85,8 +129,9 @@ const Team = () => {
         </h4>
         <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
         <div className="grid md:grid-cols-3 sm:grid-cols-2 content-center my-2">
-          {cont_ctr.map((f) => (
+          {map_cont_ctr[year].map((f, idx) => (
             <Card
+              key={idx}
               Facultyname={f.Name}
               photo={f.photo}
               description={f.description}
@@ -95,30 +140,33 @@ const Team = () => {
           ))}
         </div>
       </div>
-      <div className="p-2 my-4">
-        <h4 className="text-3xl text-center my-2 font-medium text-slate-800">
-          Event Management Team
-        </h4>
-        <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
-        <div className="grid md:grid-cols-4 sm:grid-cols-2 content-center my-2">
-          {event_mng.map((f) => (
-            <Card
-              Facultyname={f.Name}
-              photo={f.photo}
-              description={f.description}
-              position={f.position}
-            ></Card>
-          ))}
+
+      {map_event_mng[year].length > 0 && (
+        <div className="p-2 my-4">
+          <h4 className="text-3xl text-center my-2 font-medium text-slate-800">
+            Event Management Team
+          </h4>
+          <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
+          <div className="grid md:grid-cols-4 sm:grid-cols-2 content-center my-2">
+            {map_event_mng[year].map((f, idx) => (
+              <Card
+                key={idx}
+                Facultyname={f.Name}
+                photo={f.photo}
+                description={f.description}
+                position={f.position}
+              ></Card>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
+
       <hr className="my-4 w-11/12 mx-auto bg-gray-300 h-px" />
       <div>
         <div className="flex justify-center items-center h-full">
           <div className="max-w-5xl">
             <Carousel autoSlide={true}>
-              {[
-                ...slides.map((s) => <img src={s} />)
-              ]}
+              {[...slides.map((s, idx) => <img key={idx} src={s} />)]}
             </Carousel>
           </div>
         </div>
