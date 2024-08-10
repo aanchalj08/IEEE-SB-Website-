@@ -95,8 +95,8 @@ const Event = () => {
 
       <div className="m-4 flex flex-col justify-center">
 
-        {EventCardContent.map((Event)=>(
-        <div className="flex flex-col my-2 mx-auto items-center max-w-2xl bg-white rounded-lg shadow md:flex-row">
+        {EventCardContent.map((Event, index)=>(
+        <div key={index} className="flex flex-col my-2 mx-auto items-center max-w-2xl bg-white rounded-lg shadow md:flex-row">
           <img
             className="object-cover w-full rounded-t-lg h-96 md:h-full md:w-72 md:rounded-none md:rounded-s-lg"
             src={Event.photo}
@@ -111,10 +111,6 @@ const Event = () => {
             </p>
           </div>
         </div>))}
-        
-
-
-        
       </div>
     </>
   );

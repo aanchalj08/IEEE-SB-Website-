@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import image1 from "../image1.png";
+import image1 from ".././assets/webinar.jpg";
 
 const Webinar = () => {
   return (
