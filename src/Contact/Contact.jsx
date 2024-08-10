@@ -26,12 +26,14 @@ const Contact = () => {
   };
 
   return (
-    <div className='w-full h-full flex justify-center'>
-    <div className="w-[900px] h-[600px] mt-16 mb-28  max-xl:ml-20 max-lg:ml-0 max-sm:h-[650px] max-md:w-[600px] max-sm:w-[430px] flex justify-center items-center bg-cover bg-no-repeat bg-center  rounded-lg brightness-[120%]" style={{ backgroundImage: `url(${contactUS})` }}>
+    <div className='w-full h-screen flex justify-center'>
+    <div className="w-[900px] h-[600px] mt-16 mb-28  max-xl:ml-20 max-lg:ml-0 max-sm:h-[650px] max-md:w-[600px] max-sm:w-[430px] flex justify-center items-center bg-cover bg-no-repeat bg-center  rounded-lg brightness-[120%] " style={{
+    backgroundImage: window.innerWidth > 640 ? `url(${contactUS})` : 'none',
+  }}>
       <div className="w-[70%]  flex " >
         <div className='h-[500px] ml-4'> 
         <div className='p-5 mt-[-10px]'>
-          <h2 className="text-5xl text-white font-extrabold pb-3 mt-[-10px] ml-12 max-sm:text-3xl max-sm:ml-6  ">Contact us☎️</h2>
+          <h2 className="text-5xl text-white font-extrabold pb-3 mt-[-10px] ml-12 max-sm:text-3xl max-sm:ml-3 ">Contact us☎️</h2>
           <p className="text-lg text-white mb-[-10px] font-semi-bold">
             For more details and answers to your queries, contact us!
           </p>
