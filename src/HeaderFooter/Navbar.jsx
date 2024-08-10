@@ -25,7 +25,7 @@ const Navbar = () => {
 			<div
 				className={
 					!shownav
-						? "w-screen h-screen bg-black opacity-85 z-50 fixed left-[1800px] transition-all"
+						? "w-screen h-screen bg-black opacity-85 z-50 fixed left-[20000px] transition-all"
 						: "w-screen h-screen bg-black opacity-85 z-50 fixed left-0 transition-all"
 				}>
 				<div className="mt-6 ml-6 " onClick={() => setShownav(!shownav)}>
