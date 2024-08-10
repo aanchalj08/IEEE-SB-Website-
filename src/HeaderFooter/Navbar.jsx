@@ -60,9 +60,9 @@ const Navbar = () => {
 						? "fixed top-0 left-[-47px] right-[-47px]  bg-white z-50 shadow-lg transition-all "
 						: "relative"
 				}`}>
-				<img
-					src={logo}
-					className="m-5 w-44 max-sm:w-40 max-sm:ml-[-20px]"></img>
+				<Link to='/'>
+					<img src={logo} className="m-5 w-44 max-sm:w-40 max-sm:ml-[-20px]" />
+				</Link>
 
 				<ul className="list-none w-2/5 flex justify-evenly text-lg font-medium cursor-pointer max-xl:hidden">
 					<Link className="hover:text-cyan-600" to="/">
