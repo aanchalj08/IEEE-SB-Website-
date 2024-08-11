@@ -14,7 +14,7 @@ import InputLabel from "@mui/material/InputLabel";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Team = () => {
   const [year, setYear] = useState("2024-2025");
@@ -22,6 +22,10 @@ const Team = () => {
   const handleChange = (e) => {
     setYear(e.target.value);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  })
 
   return (
     <div>

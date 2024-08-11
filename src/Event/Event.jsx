@@ -6,10 +6,13 @@ import first from "../assets/first.webp";
 import second from "../assets/second.webp";
 import webinar from "../assets/webinar.jpg";
 import { Link } from "react-router-dom";
-import test_Img from "../assets/Caro3.jpg"
 import { EventCardContent } from "./EventData.js";
+import { useEffect } from "react";
 
 const Event = () => {
+  useEffect(() => {
+		window.scrollTo(0, 0);
+	});
   return (
     <>
       <div className="bg-[#3548a5] p-6">

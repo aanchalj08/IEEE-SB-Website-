@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const StayInTouch = () => {
   const [email, setEmail] = useState('');
@@ -13,7 +14,6 @@ const StayInTouch = () => {
     if (validateEmail(email)) {
       setError('');
       alert('Thank you for signing up!');
-      // Handle successful sign up (e.g., send email to server)
     } else {
       setError('Please enter a valid email address.');
     }
@@ -31,12 +31,13 @@ const StayInTouch = () => {
             onChange={(e) => setEmail(e.target.value)}
             className="w-80 p-2 border border-gray-300 rounded mr-2"
           />
-          <button
+          <Link
+            to="/contact"
             onClick={handleSignUp}
             className="p-2 text-2xl lg:text-base mt-2 lg:mt-0 w-full lg:w-auto mx-auto bg-gray-200 border border-gray-300 rounded cursor-pointer"
           >
             Sign up
-          </button>
+          </Link>
         </div>
       </div>
       {error && <div className="text-red-500 mt-2">{error}</div>}

@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import ieelogo from "../assets/IEEElogo.png";
 import wielogo from "../assets/wielogo.webp";
 import Accordion from '@mui/material/Accordion';
@@ -7,6 +7,9 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const About = () => {
+  useEffect(() => {
+		window.scrollTo(0, 0);
+	});
   return (
     <>
       {/* Know More About Us section */}

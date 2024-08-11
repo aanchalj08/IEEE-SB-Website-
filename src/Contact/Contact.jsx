@@ -1,33 +1,45 @@
-import { useForm } from 'react-hook-form';
-import contactUS from '../assets/contactUS.jpg'
-import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useForm } from "react-hook-form";
+import contactUS from "../assets/contactUS.jpg";
+import emailjs from "@emailjs/browser";
+import { useEffect, useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
-  const form = useRef();
-  const notify = () => toast("Email Sent!");
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm();
+	const form = useRef();
+	const notify = () => toast("Email Sent!");
 
-  const onSubmit = (data, e) => {
-    e.preventDefault();
-    data.reply_to = data.email
-    emailjs
-      .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMP_ID, form.current, {
-        publicKey: import.meta.env.VITE_API_KEY,
-      })
-      .then(
-        () => {
-          notify();
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
-  };
+	const onSubmit = (data, e) => {
+		e.preventDefault();
+		data.reply_to = data.email;
+		emailjs
+			.sendForm(
+				import.meta.env.VITE_SERVICE_ID,
+				import.meta.env.VITE_TEMP_ID,
+				form.current,
+				{
+					publicKey: import.meta.env.VITE_API_KEY,
+				}
+			)
+			.then(
+				() => {
+					notify();
+				},
+				(error) => {
+					console.log("FAILED...", error.text);
+				}
+			);
+	};
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
 
-  return (
+	return (
 		<div className="w-full h-screen flex justify-center">
 			<div
 				className="w-[900px] h-[600px] mt-16 mb-28 max-xl:ml-20 max-lg:ml-0 max-sm:h-[650px] max-md:w-[600px] max-sm:w-[430px] flex justify-center items-center bg-cover bg-no-repeat bg-center rounded-lg brightness-[120%] "
@@ -138,6 +150,6 @@ const Contact = () => {
 			</div>
 		</div>
 	);
-}
+};
 
-export default Contact
+export default Contact;

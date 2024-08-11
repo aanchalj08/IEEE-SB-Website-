@@ -9,7 +9,7 @@ import prev from '../assets/prev.svg'
 import frwd from '../assets/frwd.svg'
 import StayInTouch from "./StayTouch";
 import { EventData } from "./eventData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -31,6 +31,9 @@ const Home = () => {
 			setSlideNumber(4)
 		}
 	}
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	});
 	return (
 		<div className="w-5/6 mx-auto flex-row space-y-10">
 			<h1 className="text-center text-blue-800 text-6xl ">IEEE Student Branch, LNMIIT</h1>
