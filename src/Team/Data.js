@@ -159,10 +159,10 @@ export const map_ieee_sb = {
 
 export const wie_24_25 = [
   {
-    Name: "Neha Soni",
+    Name: "Aanchal Jain",
     position: "Chairperson",
     description: "",
-    photo: Neha_Soni,
+    photo: Aanchal_Jain,
   },
   {
     Name: "Radhika Jain",
