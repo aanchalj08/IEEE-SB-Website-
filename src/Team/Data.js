@@ -18,10 +18,12 @@ import Aditya_Jain from "../assets/Aditya_Jain.jpg";
 import Shreedhar_Goyal from "../assets/Shreedhar_Goyal.jpg";
 import Anshika_Agrawal from "../assets/Anshika_Agrawal.jpeg";
 import Ayush_Agrawal from "../assets/Ayush_Agrawal.jpg";
-import Caro1 from "../assets/Caro1.jpg";
-import Caro2 from "../assets/Caro2.jpg";
-import Caro3 from "../assets/Caro3.jpg";
-import Caro4 from "../assets/Caro4.jpg";
+import Caro1 from "../assets/Caro1.jpeg";
+import Caro2 from "../assets/Caro2.jpeg";
+import Caro3 from "../assets/Caro3.jpeg";
+import Caro4 from "../assets/Caro4.jpeg";
+import Caro5 from "../assets/Caro5.jpeg";
+import Caro6 from "../assets/Caro6.jpeg";
 import Shivansh_Porwal from "../assets/Shivansh_Porwal.jpg";
 import Nikhil_Goyal from "../assets/Nikhil_Goyal.png";
 import Mitul_Khemani from "../assets/Mitul_Khemani.jpg";
@@ -439,4 +441,4 @@ export const map_event_mng = {
 
 export const years = ["2023-2024","2024-2025"];
 
-export const slides = [Caro1, Caro2, Caro3, Caro4];
+export const slides = [Caro1, Caro2, Caro3, Caro4,Caro5,Caro6];
