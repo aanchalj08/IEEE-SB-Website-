@@ -4,9 +4,15 @@ import img3 from "../assets/robothon.jpg";
 import img4 from "../assets/crack.jpg";
 import img5 from "../assets/Code_hunt.jpg";
 import img6 from "../assets/talk1.jpg";
-import img7 from "../assets/talk2.jpg"
-import img8 from "../assets/talk3.jpg"
+import img7 from "../assets/talk2.jpg";
+import img8 from "../assets/talk3.jpg";
+import img9 from "../assets/talk4.jpg";
 export const EventCardContent = [
+  {
+    photo: img9,
+    title: " Nanophotonics, Metamaterials, Terahertz Electronics and Beyond",
+    content: "Speaker: Dr. Ashish Kumar Chowdhary (Assistant Professor, ECE Department, IIT Roorkee) Date: August 30, 2024 In this talk, he will introduce the emerging field of nanophotonics, metamaterials, and Terahertz Electronics. He will also present highlights of his PhD Research Work, which investigated the nanophotonics and metamaterials-based tunable optical devices for filtering and harvesting solar energy. Further, He will discuss his future plans, where he aims to step into the field of Terahertz to design electronic photonic integrated circuits for 6G Communication devices. All the B.Tech, M.Tech, and PhD students are encouraged to attend this talk"
+  },
   {
     photo: img8,
     title: " Navigating the Path: Bhavika Agarwal on Deep Learning Techniques for Advanced Photodetectors",
