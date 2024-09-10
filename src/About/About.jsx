@@ -49,15 +49,15 @@ const About = () => {
             About WIE
           </p>
           <p className="text-[#5e5e5e] text-base">
-            IEEE is the world’s largest professional association dedicated to
-            advancing technological innovation and excellence for the benefit
-            of humanity. IEEE and its members inspire a global community
-            through its highly cited publications, conferences, technology
-            standards, and professional and educational activities. IEEE
-            members get access to different technical societies, their
-            publications at a discounted rate. IEEE is a leading developer of
-            international standards that underpin many of today's
-            telecommunications, IT and power generation products and services.
+          Women in engineering within IEEE play a pivotal role in advancing innovation and diversity in the field. IEEE Women in Engineering (WIE) is one of the largest international professional organizations dedicated to promoting women engineers and scientists. Through its global network, WIE fosters collaboration, mentorship, and opportunities for leadership development. The group actively works to increase the number of women in engineering and related fields by offering scholarships, workshops, and networking events. By advocating for gender equity, WIE also helps break down barriers and challenges that women face in traditionally male-dominated industries. Their efforts contribute to creating a more inclusive, innovative, and impactful engineering community.
+
+
+
+
+
+
+
+
           </p>
         </div>
         <div className="flex flex-1 m-8 justify-center">
