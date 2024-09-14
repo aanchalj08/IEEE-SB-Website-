@@ -123,7 +123,7 @@ const Home = () => {
 			{/* Upcoming Events */}
 			<div className="text-center">
 				<Header title="UPCOMING EVENTS" />
-				<div className="text-4xl">
+				{/* <div className="text-4xl">
 					<p>
 						Stage 3 Submission:{" "}
 						<a href="https://bit.ly/crookshanks" className="text-sky-500">
@@ -138,7 +138,7 @@ const Home = () => {
 							Form
 						</a>
 					</p>
-				</div>
+				</div> */}
 				{EventData.map((event) => {
 					return (
 						<EventCard
