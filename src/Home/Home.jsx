@@ -36,7 +36,9 @@ const Home = () => {
 	});
 	return (
 		<div className="w-5/6 mx-auto flex-row space-y-10">
-			<h1 className="text-center text-blue-800 text-6xl ">IEEE Student Branch, LNMIIT</h1>
+			<h1 className="text-center text-blue-800 text-6xl ">
+				IEEE Student Branch, LNMIIT
+			</h1>
 			<div className="text-center">
 				<Header title="ABOUT" />
 				<ul className="list-disc mt-8 m-6 font-normal text-slate-600 text-lg">
@@ -55,20 +57,29 @@ const Home = () => {
 						the skill set of students.
 					</li>
 				</ul>
-				<button onClick={()=>navigate('/about')} className="border-2 w-40 h-14 bg-blue-800 font-serif text-white text-lg font-semibold hover:bg-blue-600">
+				<button
+					onClick={() => navigate("/about")}
+					className="border-2 w-40 h-14 bg-blue-800 font-serif text-white text-lg font-semibold hover:bg-blue-600">
 					Know More
 				</button>
 			</div>
 
 			<div className="lg:hidden flex justify-center gap-10">
-				<button onClick={prevSlider}><img src={prev} className="w-10" /></button>
+				<button onClick={prevSlider}>
+					<img src={prev} className="w-10" />
+				</button>
 				<div>
-					<img src={images[slideNumber-1]} className="w-[700px]" />
+					<img src={images[slideNumber - 1]} className="w-[700px]" />
 				</div>
-				<button onClick={frwdSlider}><img src={frwd} className="w-10" /></button>
+				<button onClick={frwdSlider}>
+					<img src={frwd} className="w-10" />
+				</button>
 			</div>
 
-			<div className={`absolute p-5 z-50 w-full left-0 bg-slate-500 ${!show && "invisible"}`}>
+			<div
+				className={`absolute p-5 z-50 w-full left-0 bg-slate-500 ${
+					!show && "invisible"
+				}`}>
 				<div className="flex justify-between">
 					<div>
 						<p>{slideNumber}/4</p>
@@ -78,11 +89,15 @@ const Home = () => {
 					</div>
 				</div>
 				<div className="flex justify-center gap-10">
-					<button onClick={prevSlider}><img src={prev} className="w-10" /></button>
+					<button onClick={prevSlider}>
+						<img src={prev} className="w-10" />
+					</button>
 					<div>
-						<img src={images[slideNumber-1]} className="w-[700px]" />
+						<img src={images[slideNumber - 1]} className="w-[700px]" />
 					</div>
-					<button onClick={frwdSlider}><img src={frwd} className="w-10" /></button>
+					<button onClick={frwdSlider}>
+						<img src={frwd} className="w-10" />
+					</button>
 				</div>
 			</div>
 
@@ -108,6 +123,22 @@ const Home = () => {
 			{/* Upcoming Events */}
 			<div className="text-center">
 				<Header title="UPCOMING EVENTS" />
+				<div className="text-4xl">
+					<p>
+						Stage 3 Submission:{" "}
+						<a href="https://bit.ly/crookshanks" className="text-sky-500">
+							Form
+						</a>
+					</p>
+					<p>
+						Stage 4 Submission:{" "}
+						<a
+							href="https://forms.gle/vGGyhYLNdXZZ8HpQ8"
+							className="text-sky-500">
+							Form
+						</a>
+					</p>
+				</div>
 				{EventData.map((event) => {
 					return (
 						<EventCard
