@@ -34,6 +34,7 @@ const Home = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	});
+	console.log("Stage 4 Submission: https://forms.gle/vGGyhYLNdXZZ8HpQ8");
 	return (
 		<div className="w-5/6 mx-auto flex-row space-y-10">
 			<h1 className="text-center text-blue-800 text-6xl ">
