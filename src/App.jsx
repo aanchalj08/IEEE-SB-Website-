@@ -17,7 +17,7 @@ function App() {
     return (
 		<div className="w-full source-sans">
 			<Navbar />
-			{location.pathname === "/" && <HomeImg />}
+			{ location.pathname === "/" && <HomeImg /> }
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/event" element={<Event />} />
